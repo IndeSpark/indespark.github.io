@@ -1,0 +1,75 @@
+.text {
+    fill: none;
+    stroke-width: 8;
+    stroke-linejoin: round;
+    stroke-dasharray: 70 330;
+    stroke-dashoffset: 0;
+    -webkit-animation: stroke 7.2s infinite linear;
+    animation: stroke 7.2s infinite linear;
+}
+
+.text:nth-child(6n + 1) {
+    stroke: #61BB46;
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s;
+}
+
+.text:nth-child(6n + 2) {
+    stroke: #FDB827;
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s;
+}
+
+.text:nth-child(6n + 3) {
+    stroke: #F5821F;
+    -webkit-animation-delay: -3.6s;
+    animation-delay: -3.6s;
+}
+
+.text:nth-child(6n + 4) {
+    stroke: #E03A3E;
+    -webkit-animation-delay: -4.8s;
+    animation-delay: -4.8s;
+}
+
+.text:nth-child(6n + 5) {
+    stroke: #963D97;
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+}
+
+.text:nth-child(6n + 6) {
+    stroke: #009DDC;
+    -webkit-animation-delay: -7.2s;
+    animation-delay: -7.2s;
+}
+
+@-webkit-keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
+
+/* Other stuff */
+body {
+    /* background: #498A40 -webkit-radial-gradient(#6FB262, #498A40); */
+    /* background: #498A40 radial-gradient(#6FB262, #498A40); */
+    background: #222831;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif !important;
+}
+
+svg {
+    width: 50%;
+    margin: 0px auto;
+    display: block;
+    text-transform: uppercase;
+    font: 800 12.5em/1  'Fira Sans', Impact;
+    letter-spacing: 20pt;
+}
